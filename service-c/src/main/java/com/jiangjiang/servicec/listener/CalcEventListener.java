@@ -33,7 +33,7 @@ public class CalcEventListener {
         }
 
 
-        String timeStr = msg.getCreateTime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        String timeStr = msg.getCallTime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
         System.out.printf("[%s] 调用时间:%s | 入参:a=%d,b=%d | 结果:c=%d%n",
                 traceId,

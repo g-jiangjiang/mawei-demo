@@ -19,5 +19,5 @@ public class CalcMsgDTO implements Serializable {
     private Integer paramA;
     private Integer paramB;
     private Integer resultC;
-    private LocalDateTime createTime;
+    private LocalDateTime callTime;
 }
