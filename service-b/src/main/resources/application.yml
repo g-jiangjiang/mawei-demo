@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: service-b
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 1000
+        readTimeout: 3000
+  circuitbreaker:
+    enabled: true
+
+remote:
+  service-a:
+    url: "http://localhost:8080"
